@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
-let defaultTextColor ='#1976d1';
 let defaultStyle={
-  color: defaultTextColor
-
+  color:'#1976d1'
 };
 
 class Aggregate extends Component{
@@ -44,8 +41,8 @@ class Playlist extends Component{
 class App extends Component {
   render(){
     return (
-      <div style={{color:defaultTextColor}} className="App">
-        <h1>Title</h1>
+      <div className="App">
+        <h1 style={{...defaultStyle, 'font-size': '45px'}}>Title</h1>
         <Aggregate/>
         <Aggregate/>
         <Filter/>
