@@ -4,7 +4,8 @@ import './App.css';
 
 let defaultStyle={
   color:'#1976d1'
-};
+}
+
 
 class Aggregate extends Component{
   render(){
@@ -33,7 +34,7 @@ class Playlist extends Component{
       <div style={{...defaultStyle, width:'25%',display:'inline-block'}}>
       <img/>
       <h3>Playlist Name</h3>
-      <ul><li>Song 1</li><li>Song 2</li><li>Song 3</li><li>Song 4</li></ul>
+      <ul style={{listStyle:'none'}}><li>Song 1</li><li>Song 2</li><li>Song 3</li><li>Song 4</li></ul>
        </div>
     )
   }
